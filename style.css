@@ -1,0 +1,62 @@
+/* Réinitialisation globale pour les marges et le padding */
+* {
+ margin: 0;
+ padding: 4px;  /* Correction du double point-virgule */
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ box-sizing: border-box;  /* S'assurer que le box-sizing inclut les bordures et padding */
+}
+
+/* Style global du corps */
+body {
+ background-color: #222;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+ height: 100vh;
+}
+
+/* Carte contenant tous les éléments */
+.card {
+ display: flex;
+ flex-direction: column;
+ gap: 15px;
+ width: 90%;
+ max-width: 470px;
+ background: linear-gradient(135deg,#65b3c6,#019f55);
+ color: #fff;
+ border-radius: 20px;
+ padding: 40px 35px;
+ box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre pour donner du relief */
+}
+
+/* Styles des champs de saisie et de sélection */
+select, input {
+ border-radius: 20px;
+ color: #0e0b0efe;
+ font-size: 14px;
+ width: 200px;
+ padding: 10px;  /* Ajouter du padding pour améliorer la lisibilité */
+ border: 1px solid #ccc;  /* Ajouter une bordure pour plus de clarté */
+ background-color: #fff;  /* Assurez-vous que le fond est blanc pour les inputs */
+ box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);  /* Ajouter un peu de relief */
+}
+
+/* Bouton de soumission */
+input[type="submit"] {
+ background-color: #fff;
+ color: #222;
+ font-size: 16px;
+ font-weight: bold;
+ cursor: pointer;
+ border: none;
+ padding: 10px;
+ border-radius: 20px;
+ width: 200px;
+ transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+ background-color: #e537e5;
+ color: #fff;
+}
